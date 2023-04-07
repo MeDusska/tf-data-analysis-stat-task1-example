@@ -8,6 +8,5 @@ def solution(x: np.array) -> tuple:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    left = x.max()
-    right = x.max()/((1-p)**(1/len(x)))
-    return left, right
+    new_array = np.exp(x+31)
+    return new_array.mean() # Ваш ответ
